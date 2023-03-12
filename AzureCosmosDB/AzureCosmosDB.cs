@@ -10,7 +10,7 @@ namespace ConsoleApp7
     public class JsonData
     {
         public int id { get; set; }
-        public string name { get; set; }
+        public string Name { get; set; }
     }
     public class AzureCosmosDB
     {
@@ -26,7 +26,7 @@ namespace ConsoleApp7
                     UriFactory.CreateDocumentCollectionUri("db1", "coll1"), queryOptions);
             foreach (var x in familyQuery)
             {
-                Console.WriteLine("\tRead {0}", x.id + "  " + x.name);
+                Console.WriteLine("\tRead {0}", x.id + "  " + x.Name);
             }
             Console.Read();
         }
